@@ -2,3 +2,5 @@
 .idea/
 main.py
 .images/
+venv/
+__pycache__/
