@@ -23,7 +23,7 @@ def download_apod_pictures(nasa_token, count):
         extension = download_image.fetch_image_extension(image_url)
         filename = f'NASA_APOD_{day_image}{extension}'
         download_path = os.path.join(download_image.DIRECTORY, filename)
-        download_image.download_image(image_url, download_path)
+        download_image.download_image(image_url, download_path, nasa_token)
 
 
 if __name__ == '__main__':
