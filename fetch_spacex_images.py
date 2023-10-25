@@ -22,7 +22,7 @@ def fetch_spacex_last_launch(launch_id):
     pictures_links = response.json()['links']['flickr']['original']
     for picture, links in enumerate(pictures_links):
         filename = os.path.basename(links)
-        download_image.download_image(links, os.path.join(download_image.DIRECTORY, filename))
+        download_image.download_image(links, os.path.join(download_image.DIRECTORY, filename), launch_id)
 
 
 
